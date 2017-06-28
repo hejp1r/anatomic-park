@@ -1,0 +1,89 @@
+body{
+    background:black;
+}
+.clouds{
+    background:#3e83c8 url(http://www.knowstack.com/wp-content/uploads/2014/03/background1.png) repeat 0 bottom;
+    width:1268px;
+    height:768px;
+}
+/*
+#player{
+    width: 50px;
+    height: 50px;
+    background-color: blueviolet;
+    position: relative;
+    z-index: 99;
+    top:-500px;
+    left: 70px;
+}*/
+
+#player{
+    width: 50px;
+    height: 50px;
+    background-color: blueviolet;
+    position: absolute;
+    z-index: 99;
+    top:350px;
+    left: 70px;
+}
+.enemy{
+    width: 50px;
+    height: 50px;
+    background-color: darkred;
+    position: absolute;
+    z-index: 99;
+    top: 350px;
+    right: -100px;
+}
+#GameOver{
+    display: none;
+    font-size: 72px;
+    color: black;
+    font-family: fantasy;
+    text-align: center;
+    top: 200px;
+    z-index: 500;
+    position: absolute;
+    left: 500px;
+}
+
+#div_question{
+    display: none;
+    height: 768px;
+    width: 500px;
+    position: absolute;
+    background-color: aliceblue;
+    z-index: 500;
+    top:0px;
+    right: 0px;
+}
+.floating{
+    /*position: relative;*/
+	
+	
+	-webkit-animation: wing 1s infinite alternate;
+}
+
+@-webkit-keyframes wing{
+	0% { top: 300px;, left:400px;}
+	100% { top: 275px;, left: 398px;}
+}
+/*body{
+	width: 2000px;
+    height: 600px;
+	background: url(red-blood-cells-animation-background_hbuin5jf__F0000.png) 478px, 269px, repeat-x;
+	-webkit-animation: animation 30000s infinite linear;
+}
+#player{
+    width: 400px;
+    height: 400px;
+    background-color: black;
+    position: fixed;
+    top: 0px;
+    z-index: 99;
+}
+
+@-webkit-keyframes animation{
+	0%{background-position: 0 , 0  }
+	100%{background-position: -11000000px, 0; }
+}
